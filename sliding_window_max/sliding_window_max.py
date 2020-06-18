@@ -5,8 +5,14 @@ Returns: a List of integers
 def sliding_window_max(nums, k):
     # Your code here
 
-    pass
-
+    max_vals = []
+    # loop through nums arr from k to len(nums) +1
+    for num in range(k, len(nums) + 1):
+        # create window from num - k to num
+        window = nums[num - k:num]
+        max_vals.append(max(window))
+    # return max vals
+    return max_vals
 
 if __name__ == '__main__':
     # Use the main function here to test out your implementation 

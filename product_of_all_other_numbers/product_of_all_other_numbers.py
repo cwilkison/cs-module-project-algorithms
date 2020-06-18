@@ -11,7 +11,12 @@ def product_of_all_other_numbers(arr):
         for item in temp:
             total = total * item
         new_arr[i] = total
-    return new_arr
+    return
+
+    # r = 1
+    # for i in arr:
+    #     r *= i
+    # return [r / n for n in arr]
 
 
 if __name__ == '__main__':

@@ -3,20 +3,20 @@ Input: a List of integers
 Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
-    new_arr = [0]*len(arr)
-    for i in range(len(arr)):
-        temp = arr.copy()
-        temp[i] = 1
-        total = 1
-        for item in temp:
-            total = total * item
-        new_arr[i] = total
-    return
+    # new_arr = [0]*len(arr)
+    # for i in range(len(arr)):
+    #     temp = arr.copy()
+    #     temp[i] = 1
+    #     total = 1
+    #     for item in temp:
+    #         total = total * item
+    #     new_arr[i] = total
+    # return
 
-    # r = 1
-    # for i in arr:
-    #     r *= i
-    # return [r / n for n in arr]
+    r = 1
+    for i in arr:
+        r *= i
+    return [r / n for n in arr]
 
 
 if __name__ == '__main__':
